@@ -24,6 +24,7 @@ body{
      margin: auto;
      padding: 0 1rem;
 }
+.text-center{ text-align: center;}
 .img-resp{ max-width: 100%; height: auto; }
 .flex{ display: flex;}
 .align-center{ align-items: center;}
@@ -57,7 +58,24 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 .banner a{ display: inline-block; background: #fff; width: 185px; line-height: 50px; color: var(--black); text-align: center; font-weight: 600; border-radius: 5px; }
 
 
-.wrap-2{ padding: 1rem 0; }
+
+.wrap-2{ padding: 100px 0;}
+.wrap-2 h2{ font-size: 20px; font-weight: 500; color: var(--blue);}
+.wrap-2 h2+p{ font-size: 28px; font-weight: 700; margin-bottom: 4rem; }
+
+.service{ padding: 45px 60px 40px 30px; box-shadow: 0 0 10px #0000001a; border-radius: 5px; position: relative;}
+.service h3{ font-size: 20px; font-weight: 600; }
+.service p{ font-size: 14px; color: var(--gray); margin: 20px 0 30px; }
+.service a{ text-decoration: underline; font-size: 14px; color: inherit;}
+.services .col-3:nth-child(1) .service::before{ content: ''; position: absolute; left: 0; right: 0; top: 0;height: 15px; background: var(--blue); border-radius: 5px 5px 0 0 ; }
+.services .col-3:nth-child(2) .service{ background: var(--blue); color: var(--white); }
+.services .col-3:nth-child(2) .service p{ color: #fff9;}
+
+.company-info{ margin: 100px 0;}
+.info{ text-align: center; padding: 22px 0;}
+.info b{ font-weight: 600; font-size: 24px;}
+.info p{ font-size: 14px; font-weight: 500;}
+
 
 
 .wrap-3{ background: var(--blue); color: var(--white); padding: 1rem 0; }
@@ -68,6 +86,7 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 /* responsive */
 @media screen and (max-width:1280px){
      .banner-text{padding-right: 0;}
+     .service{ padding: 45px 15px 40px 15px}
 }
 
 
@@ -79,6 +98,7 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 .col-t-9{ grid-column: span 9; }
 .col-t-12{ grid-column: span 12; }
 nav ul{gap: 2rem;}
+.service {padding: 45px 10px 40px 11px;}
 
 }
 
@@ -92,6 +112,7 @@ nav{ display: none;}
 .menu{ display: inline-block;}
 .order-m-up{ order: -1;}
 .justify-m-center{ justify-content: center;}
+.service{ padding: 45px 60px 40px 30px;}
 }
 
 
