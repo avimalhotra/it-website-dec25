@@ -65,7 +65,7 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 
 .service{ padding: 45px 60px 40px 30px; box-shadow: 0 0 10px #0000001a; border-radius: 5px; position: relative;}
 .service h3{ font-size: 20px; font-weight: 600; }
-.service p{ font-size: 14px; color: var(--gray); margin: 20px 0 30px; }
+.service p{ font-size: 14px; color: var(--gray); margin: 20px 0 30px;}
 .service a{ text-decoration: underline; font-size: 14px; color: inherit;}
 .services .col-3:nth-child(1) .service::before{ content: ''; position: absolute; left: 0; right: 0; top: 0;height: 15px; background: var(--blue); border-radius: 5px 5px 0 0 ; }
 .services .col-3:nth-child(2) .service{ background: var(--blue); color: var(--white); }
@@ -74,8 +74,23 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 .company-info{ margin: 100px 0;}
 .info{ text-align: center; padding: 22px 0;}
 .info b{ font-weight: 600; font-size: 24px;}
-.info p{ font-size: 14px; font-weight: 500;}
+.info p{ font-size: 14px; font-weight: 500; color: var(--gray);}
+.about p:nth-child(3){ font-size: 14px; color: var(--gray); margin: 20px 0 30px;  }
+.about ul{ line-height: 40px; flex-flow: wrap; }
+.about li{ flex: 0 1 50%;}
 
+.our-work{ margin: 100px 0;}
+.work{ margin-top: 40px;}
+.work ul{ gap: 2rem; padding: 0;}
+.work li{ gap: 2rem;}
+.work li .collapse{ display: none; }
+.work li a.vert{ writing-mode: sideways-lr; line-height: 81px; display: block; color: var(--blue); font-size: 24px; font-weight: 500; border-radius: 5px; box-shadow: 0 0 18px #0000001a; border: 2px solid transparent; text-align: center; }
+.work li.active .vert{ border-color: var(--blue); }
+.work li.active .collapse{ display: block; }
+.collapse .flex{ gap: 2rem;}
+.collapse h3{ font-size: 24px; font-weight: 500;}
+.collapse p{ font-size: 14px; color: var(--gray); margin: 1rem 0 2rem; }
+.collapse a{ display: inline-block; width: 184px; line-height: 51px; background: var(--blue); color: var(--white); text-align: center; border-radius: 5px;}
 
 
 .wrap-3{ background: var(--blue); color: var(--white); padding: 1rem 0; }
@@ -99,7 +114,7 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 .col-t-12{ grid-column: span 12; }
 nav ul{gap: 2rem;}
 .service {padding: 45px 10px 40px 11px;}
-
+.work li a.vert{ line-height: 40px;}
 }
 
 
@@ -119,4 +134,8 @@ nav{ display: none;}
 @media screen and (max-width:460px){
 .col-p-6{ grid-column: span 6; }
 .col-p-12{ grid-column: span 12; }
+.about li{ flex: 0 1 100%;}
+.work ul{ flex-flow: column; }
+.work :is(ul,li), .collapse .flex{ flex-flow: column;}
+.work li a.vert{ writing-mode: horizontal-tb;;}
 }
