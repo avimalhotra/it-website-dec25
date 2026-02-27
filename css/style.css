@@ -56,7 +56,10 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 .banner .caption strong{ font-size: 24px; font-weight: 600; line-height: 1.5;}
 .banner .desc{ line-height: 1.7; margin: 3rem 0 4rem;}
 .banner a{ display: inline-block; background: #fff; width: 185px; line-height: 50px; color: var(--black); text-align: center; font-weight: 600; border-radius: 5px; }
-
+.slick-prev{ position: absolute; left: 0; top: 50%; }
+.slick-next{ position: absolute; right: 0; top: 50%;}
+.slick-dots{ display: flex; justify-content: center; list-style: none; padding: 0; gap: 1rem;}
+/* li.slick-active button{ background: #f00; color: #fff;} */
 
 
 .wrap-2{ padding: 100px 0;}
@@ -86,7 +89,7 @@ nav a{ color: inherit; font-size: 14px; font-weight: 600; display: inline-block;
 .work li .collapse{ display: none; }
 .work li a.vert{ writing-mode: sideways-lr; line-height: 81px; display: block; color: var(--blue); font-size: 24px; font-weight: 500; border-radius: 5px; box-shadow: 0 0 18px #0000001a; border: 2px solid transparent; text-align: center; }
 .work li.active .vert{ border-color: var(--blue); }
-.work li.active .collapse{ display: block; }
+.work li:first-child .collapse{ display: block; }
 .collapse .flex{ gap: 2rem;}
 .collapse h3{ font-size: 24px; font-weight: 500;}
 .collapse p{ font-size: 14px; color: var(--gray); margin: 1rem 0 2rem; }
